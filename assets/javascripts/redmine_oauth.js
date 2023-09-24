@@ -80,3 +80,10 @@ function oauth_settings_visibility()
             break;
     }
 }
+
+document.addEventListener("DOMContentLoaded", function() {
+	const oauthForm = document.getElementById("login-oauth-submit").parentElement;
+	const loginFormWrapper = document.getElementById("login-form");
+
+	loginFormWrapper.appendChild(oauthForm);
+})
